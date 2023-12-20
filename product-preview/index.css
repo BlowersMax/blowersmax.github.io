@@ -22,7 +22,8 @@ h1, h2, h3 {
 }
 
 .card {
-    width: 60%;
+    width: 50%;
+    height: fit-content;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
     display: flex;
@@ -30,13 +31,18 @@ h1, h2, h3 {
 }
 
 .cardImage {
-    min-width: 50%;
-    aspect-ratio: auto;
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .cardText {
-    width: 50%;
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 0 1rem;
 }
 
 .category {
@@ -62,12 +68,17 @@ h1, h2, h3 {
 
 .addCart {
     background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
-    outline: none;
     border: none;
+    color: hsl(0, 0%, 100%);
     border-radius: 1rem;
-    padding: 1rem;
-    width: 100%;
     font-size: 1.25rem;
+    padding: 1rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+.addCard:hover {
+    transition-duration: 150ms;
+    transition: ease-in-out;
+    background-color: hsl(158, 36%, 30%);
+    cursor: copy;
 }
