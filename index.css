@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Nunito:wght@200;500;700&family=Raleway:wght@300&display=swap');
+
+html {
+    background-color: #2B2D42;
+    color: #F4EBE8;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    margin: .5rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #F4EBE8;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: #64B6AC;
+    transition: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.cardRow {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    outline: #F4EBE8 solid 2px;
+    padding: 1rem .5rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    width: 25%;
+    transition: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.card:hover {
+    opacity: 50%;
+}
